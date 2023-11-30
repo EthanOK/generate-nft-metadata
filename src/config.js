@@ -6,7 +6,8 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 const namePrefix = "CQYH";
-const description = "Remember to replace this description";
+const description =
+  "A total of 100 sets of Good Morning Chongqing were released.";
 const baseUri = "ipfs://QmVNYTYB8okc3KpcYrfnboub8UntKsmSvanXGZ13BNCvMh";
 
 const solanaMetadata = {
