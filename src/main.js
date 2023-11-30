@@ -132,14 +132,15 @@ const addMetadata = (_dna, _edition) => {
   let dateTime = Date.now();
   let tempMetadata = {
     name: `${namePrefix} #${_edition}`,
+    // name: `${namePrefix}`,
     description: description,
     image: `${baseUri}/${_edition}.png`,
-    dna: sha1(_dna),
-    edition: _edition,
-    date: dateTime,
-    ...extraMetadata,
-    attributes: attributesList,
-    compiler: "HashLips Art Engine",
+    // dna: sha1(_dna),
+    // edition: _edition,
+    // date: dateTime,
+    // ...extraMetadata,
+    // attributes: attributesList,
+    // compiler: "HashLips Art Engine",
   };
   if (network == NETWORK.sol) {
     tempMetadata = {
@@ -308,7 +309,9 @@ const writeMetaData = (_data) => {
 };
 
 const saveMetaDataSingleFile = (_editionCount) => {
-  let metadata = metadataList.find((meta) => meta.edition == _editionCount);
+  // let metadata = metadataList.find((meta) => meta.edition == _editionCount);
+
+  let metadata = metadataList[_editionCount - 1];
   debugLogs
     ? console.log(
         `Writing metadata for ${_editionCount}: ${JSON.stringify(metadata)}`
