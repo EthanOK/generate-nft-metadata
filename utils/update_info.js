@@ -14,18 +14,18 @@ const {
 let rawdata = fs.readFileSync(`${basePath}/build/json/_metadata.json`);
 let data = JSON.parse(rawdata);
 
-data.forEach((item) => {
+data.forEach((item, index) => {
   if (network == NETWORK.sol) {
     item.name = `${namePrefix} #${item.edition}`;
     item.description = description;
     item.creators = solanaMetadata.creators;
   } else {
-    item.name = `${namePrefix} #${item.edition}`;
+    item.name = `${namePrefix} #${index + 1}`;
     item.description = description;
-    item.image = `${baseUri}/${item.edition}.png`;
+    item.image = `${baseUri}/${index + 1}.png`;
   }
   fs.writeFileSync(
-    `${basePath}/build/json/${item.edition}.json`,
+    `${basePath}/build/json/${index + 1}.json`,
     JSON.stringify(item, null, 2)
   );
 });
