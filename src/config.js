@@ -8,7 +8,7 @@ const network = NETWORK.eth;
 const namePrefix = "CQYH";
 const description =
   "A total of 100 sets of Good Morning Chongqing were released.";
-const baseUri = "ipfs://QmVNYTYB8okc3KpcYrfnboub8UntKsmSvanXGZ13BNCvMh";
+const baseUri = "ipfs://QmUdw1TQntMBdRqUTHi1ecwEPNfFo4NArt76B3GuWe2Sr4";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -25,7 +25,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10,
+    growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
       { name: "Eyeball" },
