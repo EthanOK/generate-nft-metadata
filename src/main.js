@@ -127,7 +127,7 @@ const drawBackground = () => {
   ctx.fillStyle = background.static ? background.default : genColor();
   ctx.fillRect(0, 0, format.width, format.height);
 };
-
+// TODO: add metadata
 const addMetadata = (_dna, _edition) => {
   let dateTime = Date.now();
   let tempMetadata = {
