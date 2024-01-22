@@ -7,8 +7,8 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "GoodMorningChongqing";
 const description =
-  "Walking through thousands of mountains anorivers, finally chose to draw only one city. Said by Lu Taiyu, who won the title of `National Rites Artist` in China. Taiyu is grateful and endorses hishometown Chongqing with color. Today, 100 pieces of `Good Morning Chongqing` NFT have been released, which is the diligently and sincerely work from Taiyu for more than 800 days. This 100 precious oil paintings record the urban scenery of Chongqing, which fully shows the 8D magic city Chongqing is a city with a perfect fusion of modern three-dimensional and tradition aarchitecture, with an elegant and beautiful living environment. The `Good Morning Chongqing` series of works include the code of civilization of Chongqing's urban development for more than 3,000 years, and is a genetic map that interprets Chongqing the Chinese youngest municipality from Good Morning history tomodern times. The Chongqing NFT definitely an indigenous and authentic bibliography of this city.";
-const baseUri = "ipfs://QmUdw1TQntMBdRqUTHi1ecwEPNfFo4NArt76B3GuWe2Sr4";
+  "Walking through thousands of mountains anorivers, finally chose to draw only one city. Said by Lu Taiyu, who won the title of `National Rites Artist` in China. Taiyu is grateful and endorses hishometown Chongqing with color. Today, 100 pieces of `Good Morning Chongqing` NFT have been released, which is the diligently and sincerely work from Taiyu for more than 800 days. This 100 precious oil paintings record the urban scenery of Chongqing, which fully shows the 8D magic city Chongqing is a city with a perfect fusion of modern three-dimensional and tradition architecture, with an elegant and beautiful living environment. The `Good Morning Chongqing` series of works include the code of civilization of Chongqing's urban development for more than 3,000 years, and is a genetic map that interprets Chongqing the Chinese youngest municipality from Good Morning history tomodern times. The `Good Morning Chongqing` NFT definitely an indigenous and authentic bibliography of this city.";
+const baseUri = "ipfs://QmaHHQiJXWUpPTxGDYX7DZF95hFpfQSMFPi3Tj7LFakLkC";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -43,9 +43,9 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
-  smoothing: false,
+  width: 1024,
+  height: 1024,
+  smoothing: true,
 };
 
 const gif = {
